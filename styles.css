@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Press Start 2P", sans-serif;
+  color: #eee;
+  overflow-x: hidden;
+  background-color: #222;
+}
+
+/* LAYOUT */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 2rem 7rem 2rem;
+  align-items: center;
+}
+
+header button,
+#checkBtn {
+  padding: 1rem;
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  border: none;
+  cursor: pointer;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10rem;
+  margin-bottom: 11rem;
+}
+
+.line {
+  width: 100%;
+  position: relative;
+  height: 1rem;
+  background-color: #eee;
+}
+
+.quest-mark-div {
+  background-color: #eee;
+  color: #222;
+  padding: 3rem;
+  top: 50%;
+  font-size: 4rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.guessing-container h2 {
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.check-context h2 {
+  display: none;
+}
+
+.guessing-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+input[type="number"] {
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #eee;
+  padding: 2rem 5rem;
+  background: none;
+  border: 0.5rem solid #eee;
+}
+
+.check-context {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.check-context p {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+
+@media (min-width: 48em) {
+  header {
+    padding-bottom: 10rem;
+  }
+  header button,
+  #checkBtn {
+    font-size: 2rem;
+    padding: 2rem 3rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  .title-container {
+    gap: 20rem;
+    margin-bottom: 25rem;
+  }
+
+  .line {
+    height: 0.8rem;
+  }
+
+  .quest-mark-div {
+    font-size: 6rem;
+    padding: 3rem 8rem;
+  }
+
+  .guessing-container h2 {
+    display: none;
+  }
+  .guessing-div {
+    justify-content: space-around;
+  }
+  .check-context {
+    align-items: flex-start;
+    width: 40rem;
+  }
+
+  .check-context h2 {
+    display: block;
+  }
+  .check-context h2,
+  .check-context p {
+    font-size: 2rem;
+  }
+
+  input[type="number"] {
+    padding: 2.5rem;
+    font-size: 6rem;
+    width: 30rem;
+  }
+}
